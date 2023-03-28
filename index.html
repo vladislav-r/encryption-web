@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Шифр XOR</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="headerInner">
+        <div class="logo">
+          <a href="/"> <img src="./assets/img/nextjs.svg" alt=""></a>
+        </div>
+        <nav class="nav">
+          <a class="navLink active" href="/">Шифр XOR</a>
+          <a class="navLink " href="./cesar.html">Шифр Цезаря</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <div class="container">
+      <section class="codeBlock">
+        <div>
+          <p class="title">Шифр XOR</p>
+        </div>
+        <form class="codeBlockInner">
+          <div class="inputGroup">
+            <label for="messageInput">Сообщение</label>
+            <img class="inputIcon" src="./assets/img/msg.svg" alt="">
+            <input id="messageInput" value="" class="messageInput" type="text" placeholder="Сообщение">
+          </div>
+          <div class="inputGroup">
+            <label for="keyInput">Ключ</label>
+            <img class="inputIcon" src="./assets/img/key.svg" alt="">
+            <input id="keyInput" value="" class="keyInput" type="text" placeholder="Ключ">
+          </div>
+
+
+
+          <select name="" id="select">
+            <option value="encode">Зашифровать</option>
+            <option value="decode">Расшифровать</option>
+          </select>
+
+
+          <button class="successBtn">Готово</button>
+        </form>
+        <div class="resBlock">
+          <p data-tooltip="Cкопировать" class="res"></p>
+        </div>
+      </section>
+
+    </div>
+  </main>
+  <script type="module" src="./assets/js/index.js"></script>
+</body>
+
+</html>
